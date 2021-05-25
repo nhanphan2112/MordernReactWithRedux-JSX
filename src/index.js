@@ -5,7 +5,17 @@ import ReactDOM from "react-dom";
 // Create a react component
 //below is a functional component
 const App = () => {
-	return <div>Hi there!</div>;
+	return (
+		<div>
+			<label class="label" for="name">
+				Enter name:
+			</label>
+			<input id="name" type="text" />
+			{/* <button style="background-color: blue; color:white;">Submit</button> */}
+      {/* The usesage of single quote '' in line 16 is for non JSX properties such as css html styling  */}
+			<button style={{ backgroundColor: 'blue', color: 'white' }}>Submit</button>
+		</div>
+	);
 };
 
 // Take the react component and show it on the screen
